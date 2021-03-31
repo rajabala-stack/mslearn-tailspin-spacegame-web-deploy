@@ -1,9 +1,10 @@
 trigger:
 - '*'
 
-pool:
-  vmImage: 'ubuntu-18.04'
+pool: 
+  name: Default
   demands:
+  - agent.name -equals DESKTOP-6IQ0FI4
   - npm
 
 variables:
